@@ -3,139 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilemas Digitais no Brasil: Cartas Interativas</title>
+    <title>Dilemas Digitais no Brasil: Perguntas e Respostas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="main-header">
         <div class="header-container">
-            <span class="badge">Guia Interativo 3D</span>
+            <span class="badge">Guia Interativo</span>
             <h1>Dilemas Digitais no Brasil</h1>
-            <p>Clique em qualquer carta para girar e ver o diagnóstico e as soluções práticas.</p>
+            <p>Clique em uma pergunta para revelar a resposta oculta.</p>
         </div>
     </header>
 
     <main class="main-content">
-        <section class="cards-grid">
+        
+        <section class="faq-container">
 
-            <!-- CARTA 1 -->
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-card-inner">
-                    <!-- FRENTE DA CARTA -->
-                    <div class="flip-card-front">
-                        <span class="category-tag">Cibersegurança</span>
-                        <h3>Como evitar golpes do Pix e clonagem no WhatsApp?</h3>
-                        <div class="click-hint">🔄 Clique para virar a carta</div>
+            <!-- PERGUNTA 1 -->
+            <details class="faq-card">
+                <summary class="faq-header">
+                    <span class="category-tag">Cibersegurança</span>
+                    <h3 class="question-text">Como evitar golpes do Pix e clonagem de WhatsApp?</h3>
+                    <span class="click-indicator">Clique para ver a resposta ▼</span>
+                </summary>
+                <div class="faq-body">
+                    <div class="problema-box">
+                        <h4>⚠️ O Problema</h4>
+                        <p>Criminosos usam engenharia social para se passar por conhecidos ou instituições financeiras, solicitando transferências Pix urgentes.</p>
                     </div>
-                    <!-- VERSO DA CARTA -->
-                    <div class="flip-card-back">
-                        <div class="card-content">
-                            <div class="problema-box">
-                                <h4>⚠️ O Problema</h4>
-                                <p>Criminosos usam engenharia social para se passar por conhecidos ou bancos solicitando Pix urgente.</p>
-                            </div>
-                            <div class="solucao-box">
-                                <h4>💡 Solução Prática</h4>
-                                <ul>
-                                    <li>Ative a confirmação em duas etapas no WhatsApp.</li>
-                                    <li>Crie um código de verificação familiar.</li>
-                                    <li>Reduza o limite do Pix noturno no seu aplicativo bancário.</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="solucao-box">
+                        <h4>💡 Soluções Práticas</h4>
+                        <ul>
+                            <li>Ative a verificação em duas etapas no aplicativo do WhatsApp.</li>
+                            <li>Crie um código de confirmação verbal com seus familiares.</li>
+                            <li>Reduza o limite de transferências Pix no período nocturno.</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </details>
 
-            <!-- CARTA 2 -->
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-card-inner">
-                    <!-- FRENTE DA CARTA -->
-                    <div class="flip-card-front">
-                        <span class="category-tag">Sociedade</span>
-                        <h3>Como checar se uma notícia é Fake News antes de enviar?</h3>
-                        <div class="click-hint">🔄 Clique para virar a carta</div>
+            <!-- PERGUNTA 2 -->
+            <details class="faq-card">
+                <summary class="faq-header">
+                    <span class="category-tag">Sociedade</span>
+                    <h3 class="question-text">Como identificar Fake News antes de compartilhar?</h3>
+                    <span class="click-indicator">Clique para ver a resposta ▼</span>
+                </summary>
+                <div class="faq-body">
+                    <div class="problema-box">
+                        <h4>⚠️ O Problema</h4>
+                        <p>A circulação descontrolada de informações falsas gera desinformação sobre saúde, segurança pública e eleições.</p>
                     </div>
-                    <!-- VERSO DA CARTA -->
-                    <div class="flip-card-back">
-                        <div class="card-content">
-                            <div class="problema-box">
-                                <h4>⚠️ O Problema</h4>
-                                <p>Desinformação espalhada em grupos gera pânico e afeta decisões de saúde e cidadania.</p>
-                            </div>
-                            <div class="solucao-box">
-                                <h4>💡 Solução Prática</h4>
-                                <ul>
-                                    <li>Pesquise em agências de checagem (Lupa, Aos Fatos).</li>
-                                    <li>Evite repassar mensagens com tom alarmista sem fonte.</li>
-                                    <li>Leia o texto completo antes de compartilhar pela manchete.</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="solucao-box">
+                        <h4>💡 Soluções Práticas</h4>
+                        <ul>
+                            <li>Pesquise a informação em agências independentes de checagem.</li>
+                            <li>Verifique a data de publicação e o autor do conteúdo.</li>
+                            <li>Evite repassar mensagens com tom alarmista ou sem fonte explícita.</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </details>
 
-            <!-- CARTA 3 -->
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-card-inner">
-                    <!-- FRENTE DA CARTA -->
-                    <div class="flip-card-front">
-                        <span class="category-tag">Privacidade</span>
-                        <h3>O que fazer em caso de vazamento de dados pessoais?</h3>
-                        <div class="click-hint">🔄 Clique para virar a carta</div>
+            <!-- PERGUNTA 3 -->
+            <details class="faq-card">
+                <summary class="faq-header">
+                    <span class="category-tag">Privacidade</span>
+                    <h3 class="question-text">O que fazer em caso de vazamento de dados pessoais?</h3>
+                    <span class="click-indicator">Clique para ver a resposta ▼</span>
+                </summary>
+                <div class="faq-body">
+                    <div class="problema-box">
+                        <h4>⚠️ O Problema</h4>
+                        <p>A exposição indevida de dados como CPF e telefone facilita a criação de contas falsas e chamadas indesejadas.</p>
                     </div>
-                    <!-- VERSO DA CARTA -->
-                    <div class="flip-card-back">
-                        <div class="card-content">
-                            <div class="problema-box">
-                                <h4>⚠️ O Problema</h4>
-                                <p>Vazamentos de CPF e telefones expõem cidadãos a fraudes e telemarketing abusivo.</p>
-                            </div>
-                            <div class="solucao-box">
-                                <h4>💡 Solução Prática</h4>
-                                <ul>
-                                    <li>Cadastre-se no sistema "Não Me Perturbe".</li>
-                                    <li>Monitore seu CPF no Registrato do Banco Central.</li>
-                                    <li>Revogue permissões desnecessárias nos apps do celular.</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="solucao-box">
+                        <h4>💡 Soluções Práticas</h4>
+                        <ul>
+                            <li>Cadastre seu número no serviço "Não Me Perturbe".</li>
+                            <li>Monitore movimentações no seu CPF usando o Registrato do Banco Central.</li>
+                            <li>Revogue permissões desnecessárias nos aplicativos instalados.</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </details>
 
-            <!-- CARTA 4 -->
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-card-inner">
-                    <!-- FRENTE DA CARTA -->
-                    <div class="flip-card-front">
-                        <span class="category-tag">Inclusão</span>
-                        <h3>Como reduzir a desigualdade e a exclusão digital?</h3>
-                        <div class="click-hint">🔄 Clique para virar a carta</div>
+            <!-- PERGUNTA 4 -->
+            <details class="faq-card">
+                <summary class="faq-header">
+                    <span class="category-tag">Inclusão</span>
+                    <h3 class="question-text">Como reduzir a exclusão e o abismo digital no país?</h3>
+                    <span class="click-indicator">Clique para ver a resposta ▼</span>
+                </summary>
+                <div class="faq-body">
+                    <div class="problema-box">
+                        <h4>⚠️ O Problema</h4>
+                        <p>A falta de acesso à internet de qualidade restringe o uso de serviços públicos e oportunidades de estudo e trabalho.</p>
                     </div>
-                    <!-- VERSO DA CARTA -->
-                    <div class="flip-card-back">
-                        <div class="card-content">
-                            <div class="problema-box">
-                                <h4>⚠️ O Problema</h4>
-                                <p>A limitação de acesso à internet de qualidade exclui milhões de serviços públicos vitais.</p>
-                            </div>
-                            <div class="solucao-box">
-                                <h4>💡 Solução Prática</h4>
-                                <ul>
-                                    <li>Incentive e cobre pontos de Wi-Fi comunitário gratuito.</li>
-                                    <li>Apoie oficinas de letramento digital para idosos.</li>
-                                    <li>Busque informações sobre tarifas sociais de internet.</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="solucao-box">
+                        <h4>💡 Soluções Práticas</h4>
+                        <ul>
+                            <li>Expandir e solicitar pontos de Wi-Fi comunitário gratuito.</li>
+                            <li>Promover oficinas de capacitação digital para populações vulneráveis.</li>
+                            <li>Informar sobre opções de tarifas sociais de internet.</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </details>
 
         </section>
+
     </main>
 
     <footer class="main-footer">
