@@ -3,120 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portal de conscientização sobre dilemas digitais, segurança cibernética e cidadania digital no Brasil.">
-    <title>Dilemas Digitais no Brasil | Diagnóstico e Soluções</title>
+    <meta name="description" content="Central de Dúvidas e Soluções para os Principais Dilemas Digitais no Brasil.">
+    <title>Dilemas Digitais no Brasil: Perguntas e Soluções</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- CABEÇALHO PRINCIPAL -->
+    <!-- CABEÇALHO -->
     <header class="main-header">
         <div class="header-container">
-            <span class="badge">Cidadania &amp; Segurança Digital</span>
+            <span class="badge">Guia Interativo</span>
             <h1>Dilemas Digitais no Brasil</h1>
-            <p>Análise crítica dos impactos da hiperconexão na sociedade brasileira e estratégias práticas de mitigações de riscos.</p>
+            <p>Clique em uma pergunta para abrir o diagnóstico completo e a solução prática.</p>
         </div>
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="main-content">
         
-        <!-- SEÇÃO INTRODUTÓRIA -->
-        <section class="intro-section" aria-label="Introdução aos dilemas digitais">
-            <h2>O Panorama da Conectividade Nacional</h2>
-            <p>O Brasil figura entre os líderes globais em tempo diário de uso de redes sociais e internet. Contudo, a rápida digitalização sem o acompanhamento de letramento digital amplo expõe a população a vulnerabilidades financeiras, informacionais e sociais.</p>
+        <section class="intro">
+            <h2>Perguntas Frequentes &amp; Soluções Práticas</h2>
+            <p>Selecione um dos temas abaixo para entender os riscos e aprender como se proteger no ambiente digital brasileiro.</p>
         </section>
 
-        <!-- GRID DE CARDS COM OS DILEMAS -->
-        <section class="dilemas-grid" aria-label="Lista de dilemas digitais e soluções">
+        <!-- CONTAINER DE PERGUNTAS (ACCORDION) -->
+        <section class="faq-container" aria-label="Lista de Perguntas e Respostas">
 
-            <!-- CARD 1: GOLPES FINANCEIROS -->
-            <article class="card">
-                <header class="card-header">
-                    <span class="card-category">Cibersegurança</span>
-                    <h3>1. Engenharia Social &amp; Golpes Financeiros</h3>
-                </header>
-                <div class="card-body">
-                    <section class="problema">
-                        <h4>⚠️ O Diagnóstico</h4>
-                        <p>O uso em massa do Pix e do WhatsApp tornou o Brasil um dos principais alvos de clonagem de perfis, falsas centrais de atendimento bancário e golpes de phishing.</p>
-                    </section>
-                    <section class="solucao">
-                        <h4>💡 Soluções e Ações Práticas</h4>
+            <!-- DILEMA 1 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span class="category-tag">Cibersegurança</span>
+                    <span class="question-text">Como identificar e evitar golpes via Pix e clonagem de WhatsApp?</span>
+                    <span class="icon">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <div class="problema-box">
+                        <h4>⚠️ O Problema no Brasil</h4>
+                        <p>Golpistas utilizam técnicas de engenharia social para se passar por familiares ou centrais bancárias, solicitando transferências emergenciais via Pix ou códigos de confirmação.</p>
+                    </div>
+                    <div class="solucao-box">
+                        <h4>💡 Solução Passo a Passo</h4>
                         <ul>
-                            <li><strong>Autenticação de Dois Fatores (2FA):</strong> Ative a verificação em duas etapas usando aplicativos autenticadores em vez de SMS.</li>
-                            <li><strong>Mecanismo Especial de Devolução (MED):</strong> Em caso de golpe via Pix, acione o MED imediatamente no aplicativo do seu banco.</li>
-                            <li><strong>Protocolo de Checagem:</strong> Desconfie de ligações solicitando senhas; desligue e retorne pelo canal oficial do banco.</li>
+                            <li><strong>Ative a Verificação em Duas Etapas:</strong> No WhatsApp, acesse Configurações &gt; Conta &gt; Confirmação em duas etapas e crie um PIN.</li>
+                            <li><strong>Estabeleça um Código Familiar:</strong> Combine uma palavra-chave com parentes para confirmar a identidade em caso de pedidos de dinheiro.</li>
+                            <li><strong>Ajuste os Limites do Pix:</strong> Reduza o limite de transferências noturnas diretamente no aplicativo do seu banco.</li>
+                            <li><strong>Mecanismo Especial de Devolução (MED):</strong> Se cair em um golpe, acione o MED no seu banco em até 80 dias para tentar reaver o valor.</li>
                         </ul>
-                    </section>
+                    </div>
                 </div>
-            </article>
+            </details>
 
-            <!-- CARD 2: DESINFORMAÇÃO -->
-            <article class="card">
-                <header class="card-header">
-                    <span class="card-category">Sociedade</span>
-                    <h3>2. Desinformação e Infodemia</h3>
-                </header>
-                <div class="card-body">
-                    <section class="problema">
-                        <h4>⚠️ O Diagnóstico</h4>
-                        <p>A circulação de notícias falsas sobre saúde pública, processos eleitorais e segurança afeta a coesão social e potencializa discursos de ódio por meio de bolhas algorítmicas.</p>
-                    </section>
-                    <section class="solucao">
-                        <h4>💡 Soluções e Ações Práticas</h4>
+            <!-- DILEMA 2 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span class="category-tag">Sociedade</span>
+                    <span class="question-text">Como saber se uma notícia é Fake News antes de compartilhar?</span>
+                    <span class="icon">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <div class="problema-box">
+                        <h4>⚠️ O Problema no Brasil</h4>
+                        <p>A rápida difusão de desinformação em redes sociais e aplicativos de mensagem gera alarmismo, impacta a saúde pública e prejudica o debate democrático.</p>
+                    </div>
+                    <div class="solucao-box">
+                        <h4>💡 Solução Passo a Passo</h4>
                         <ul>
-                            <li><strong>Metodologia Lateral:</strong> Antes de compartilhar, abra uma nova aba e pesquise o fato em fontes independentes.</li>
-                            <li><strong>Agências de Fact-Checking:</strong> Verifique conteúdos suspeitos em portais como Lupa, Aos Fatos e Comprova.</li>
-                            <li><strong>Educação Mídia-Informacional:</strong> Promova debates em ambientes familiares e escolares sobre o funcionamento dos algoritmos.</li>
+                            <li><strong>Pratique a Leitura Lateral:</strong> Abra uma nova aba no navegador e busque pelo assunto em sites de veículos jornalísticos reconhecidos.</li>
+                            <li><strong>Consulte Agências de Checagem:</strong> Verifique boatos nos portais da <em>Agência Lupa</em>, <em>Aos Fatos</em> ou <em>Projeto Comprova</em>.</li>
+                            <li><strong>Analise o Tom da Mensagem:</strong> Textos com tom alarmista, muitos pontos de exclamação e pedidos de "repasse urgente" geralmente são falsos.</li>
                         </ul>
-                    </section>
+                    </div>
                 </div>
-            </article>
+            </details>
 
-            <!-- CARD 3: PRIVACIDADE DE DADOS -->
-            <article class="card">
-                <header class="card-header">
-                    <span class="card-category">Legislação</span>
-                    <h3>3. Vazamento de Dados e Privacidade</h3>
-                </header>
-                <div class="card-body">
-                    <section class="problema">
-                        <h4>⚠️ O Diagnóstico</h4>
-                        <p>A exposição indevida de dados pessoais (CPF, dados biométricos e histórico de navegação) alimenta bancos de dados ilegais e descumpre princípios fundamentais de privacidade.</p>
-                    </section>
-                    <section class="solucao">
-                        <h4>💡 Soluções e Ações Práticas</h4>
+            <!-- DILEMA 3 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span class="category-tag">Privacidade</span>
+                    <span class="question-text">O que fazer quando seus dados pessoais (CPF, telefone) são vazados?</span>
+                    <span class="icon">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <div class="problema-box">
+                        <h4>⚠️ O Problema no Brasil</h4>
+                        <p>Mega vazamentos de bancos de dados expõem informações sensíveis dos brasileiros, facilitando a abertura de contas fraudulentas e chamadas indesejadas de telemarketing.</p>
+                    </div>
+                    <div class="solucao-box">
+                        <h4>💡 Solução Passo a Passo</h4>
                         <ul>
-                            <li><strong>Gestão de Permissões:</strong> Revogue o acesso desnecessário à localização, câmera e contatos nas configurações do celular.</li>
-                            <li><strong>Aplicação da LGPD:</strong> Solicite a exclusão de seus dados pessoais junto a empresas com base na Lei Geral de Proteção de Dados.</li>
-                            <li><strong>Bloqueio de Telemarketing:</strong> Cadastre suas linhas no serviço "Não Me Perturbe" da Anatel.</li>
+                            <li><strong>Registre-se no "Não Me Perturbe":</strong> Acesse o site oficial da Anatel para bloquear chamadas de telemarketing de telecomunicações e consignados.</li>
+                            <li><strong>Monitore seu CPF:</strong> Utilize o serviço Registrato do Banco Central para checar se há chaves Pix ou empréstimos abertos em seu nome.</li>
+                            <li><strong>Revogue Permissões de Apps:</strong> Acesse as configurações do celular e retire o acesso de aplicativos a contatos e localização quando não for necessário.</li>
                         </ul>
-                    </section>
+                    </div>
                 </div>
-            </article>
+            </details>
 
-            <!-- CARD 4: INCLUSÃO E ACESSIBILIDADE -->
-            <article class="card">
-                <header class="card-header">
-                    <span class="card-category">Infraestrutura</span>
-                    <h3>4. Abismo Digital e Desigualdade</h3>
-                </header>
-                <div class="card-body">
-                    <section class="problema">
-                        <h4>⚠️ O Diagnóstico</h4>
-                        <p>A disparidade na qualidade do acesso à internet (banda larga vs. dados móveis limitados) gera exclusão ao acesso de serviços públicos essenciais e ao mercado de trabalho.</p>
-                    </section>
-                    <section class="solucao">
-                        <h4>💡 Soluções e Ações Práticas</h4>
+            <!-- DILEMA 4 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span class="category-tag">Inclusão</span>
+                    <span class="question-text">Como diminuir a exclusão e o abismo digital na população vulnerável?</span>
+                    <span class="icon">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <div class="problema-box">
+                        <h4>⚠️ O Problema no Brasil</h4>
+                        <p>Milhões de brasileiros navegam com planos de dados limitados ou sem acesso a conexões de alta velocidade, o que impede o acesso pleno a serviços públicos digitais e educação.</p>
+                    </div>
+                    <div class="solucao-box">
+                        <h4>💡 Solução Passo a Passo</h4>
                         <ul>
-                            <li><strong>Políticas Públicas de Infraestrutura:</strong> Ampliação do Wi-Fi comunitário em periferias e áreas rurais.</li>
-                            <li><strong>Tarifas Sociais:</strong> Incentivo à expansão de planos acessíveis para famílias cadastradas em programas sociais.</li>
-                            <li><strong>Capacitação Digital:</strong> Instalação de centros comunitários de alfabetização digital para idosos e vulneráveis.</li>
+                            <li><strong>Incentivo a Wi-Fi Público:</strong> Cobrar do poder público municipal a expansão de praças e pontos comunitários de internet gratuita.</li>
+                            <li><strong>Letramento Digital para Idosos:</strong> Apoiar e divulgar centros de capacitação comunitários focado em segurança e uso básico do celular.</li>
+                            <li><strong>Aproveitamento da Tarifa Social:</strong> Buscar informações sobre programas governamentais de subsidiação para acesso à banda larga.</li>
                         </ul>
-                    </section>
+                    </div>
                 </div>
-            </article>
+            </details>
 
         </section>
     </main>
@@ -124,7 +128,7 @@
     <!-- RODAPÉ -->
     <footer class="main-footer">
         <div class="footer-container">
-            <p>&copy; <time datetime="2026">2026</time> - Guia de Cidadania Digital no Brasil. Conteúdo educativo sob a licença Open Access.</p>
+            <p>&copy; 2026 - Guia de Cidadania e Segurança Digital no Brasil. Todos os direitos reservados.</p>
         </div>
     </footer>
 
