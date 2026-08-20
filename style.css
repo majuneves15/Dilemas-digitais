@@ -7,8 +7,8 @@
 }
 
 :root {
-    --cor-primaria: #002B49;
-    --cor-secundaria: #008052;
+    --cor-primaria: #490016;
+    --cor-secundaria: #8b0834;
     --cor-fundo: #F4F7F6;
     --cor-card: #FFFFFF;
     --cor-texto: #333333;
@@ -24,7 +24,7 @@ body {
 /* --- CABEÇALHO --- */
 header {
     background-color: var(--cor-primaria);
-    color: white;
+    color: rgb(165, 45, 45);
     padding: 2rem 1rem;
     text-align: center;
 }
