@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Consciente | Dilemas & Soluções Digitais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    <link rel="preconnect" href="https://fonts.gstatic.com&quot; crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap&quot; rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Conexão<span>Consciente</span></div>
+        <nav>
+            <ul>
+                <li><a href="#dilemas">Dilemas</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#quiz">Autoavaliação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Navegue no Mundo Digital Sem Perder a Sua Essência</h1>
+            <p>Privacidade, saúde mental e desinformação: entenda os desafios da era conectada e aprenda estratégias práticas para retomar o controle.</p>
+            <a href="#dilemas" class="btn-primary">Explorar Dilemas</a>
+        </div>
+    </section>
+
+    <main class="container">
+       
+        <!-- SEÇÃO: DILEMAS -->
+        <section id="dilemas" class="section">
+            <h2 class="section-title">Os Grandes Dilemas Digitais</h2>
+            <div class="cards-grid">
+               
+                <div class="card">
+                    <div class="card-icon">🧠</div>
+                    <h3>Saúde Mental & Vício</h3>
+                    <p>O design persuasivo de notificações e rolagem infinita explora os circuitos de dopamina, gerando ansiedade e dependência.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Privacidade & Vigilância</h3>
+                    <p>Seus dados pessoais são coletados continuamente para mapear seus hábitos e alimentar modelos preditivos de mercado.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Bolhas e Desinformação</h3>
+                    <p>Algoritmos prioritizam conteúdos chocantes e polarizadores para manter o engajamento, enfraquecendo o debate público.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO: SOLUÇÕES -->
+        <section id="solucoes" class="section">
+            <h2 class="section-title">Estratégias de Solução</h2>
+           
+            <div class="tabs">
+                <button class="tab-btn active" onclick="openTab('mental')">Saúde Mental</button>
+                <button class="tab-btn" onclick="openTab('privacidade')">Privacidade</button>
+                <button class="tab-btn" onclick="openTab('informacao')">Consumo de Informação</button>
+            </div>
+
+            <div id="mental" class="tab-content active">
+                <h3>Como Proteger Sua Mente</h3>
+                <ul>
+                    <li><strong>Zonas Livres de Telas:</strong> Defina horários e locais (como a mesa de refeição e o quarto) onde celulares são proibidos.</li>
+                    <li><strong>Notificações Silenciadas:</strong> Desative alertas não essenciais de redes sociais e aplicativos de entrega.</li>
+                    <li><strong>Telas em Escala de Cinza:</strong> Mude as cores do celular para tons cinzas, reduzindo o apelo visual do aparelho.</li>
+                </ul>
+            </div>
+
+            <div id="privacidade" class="tab-content">
+                <h3>Como Proteger Seus Dados</h3>
+                <ul>
+                    <li><strong>Navegadores Focados em Privacidade:</strong> Utilize alternativas que bloqueiam rastreadores por padrão.</li>
+                    <li><strong>Gerenciadores de Senhas:</strong> Crie credenciais fortes e únicas para cada serviço sem precisar memorizá-las.</li>
+                    <li><strong>Autenticação em Duas Etapas (2FA):</strong> Ative a verificação em dois fatores via aplicativo em todas as suas contas.</li>
+                </ul>
+            </div>
+
+            <div id="informacao" class="tab-content">
+                <h3>Como Consumir Informação Crítica</h3>
+                <ul>
+                    <li><strong>Checagem de Fontes:</strong> Verifique se a notícia foi publicada em veículos independentes antes de compartilhar.</li>
+                    <li><strong>Diversidade de Leitura:</strong> Busque pontos de vista analíticos fora da sua rede habitual de contatos.</li>
+                    <li><strong>Pausa Antes do Compartilhamento:</strong> Evite reagir e repassar conteúdos no calor da emoção.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: QUIZ INTERATIVO -->
+        <section id="quiz" class="section quiz-section">
+            <h2 class="section-title">Checkup de Hábitos Digitais</h2>
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p>1. Qual a primeira coisa que você faz ao acordar?</p>
+                    <label><input type="radio" name="q1" value="0"> Checo redes sociais/mensagens imediatamente.</label><br>
+                    <label><input type="radio" name="q1" value="1"> Olho a hora, mas não abro aplicativos.</label><br>
+                    <label><input type="radio" name="q1" value="2"> Faço minha rotina matinal antes de pegar no celular.</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p>2. Com que frequência você sente ansiedade ao ficar sem celular?</p>
+                    <label><input type="radio" name="q2" value="0"> Sempre sinto desconforto ou ansiedade.</label><br>
+                    <label><input type="radio" name="q2" value="1"> Às vezes, dependendo da situação.</label><br>
+                    <label><input type="radio" name="q2" value="2"> Raras vezes ou nunca.</label>
+                </div>
+
+                <button type="button" class="btn-primary" onclick="calcularResultado()">Ver Resultado</button>
+            </form>
+            <div id="quiz-result" class="quiz-result"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Conexão Consciente. Projeto educacional sobre tecnologia e sociedade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
