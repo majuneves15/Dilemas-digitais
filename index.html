@@ -3,142 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilemas Digitais e Soluções</title>
-    <style>
-        :root {
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --text: #f8fafc;
-            --accent: #38bdf8;
-            --accent-hover: #0284c7;
-        }
-
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 2rem 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            text-align: center;
-            max-width: 600px;
-            margin-bottom: 2.5rem;
-        }
-
-        h1 {
-            color: var(--accent);
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .container {
-            display: grid;
-            gap: 1.5rem;
-            max-width: 800px;
-            width: 100%;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            border: 1px solid #334155;
-        }
-
-        .card h2 {
-            margin-top: 0;
-            font-size: 1.4rem;
-        }
-
-        button {
-            background-color: var(--accent);
-            color: #000;
-            border: none;
-            padding: 0.6rem 1.2rem;
-            font-weight: bold;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background 0.2s;
-            margin-top: 1rem;
-        }
-
-        button:hover {
-            background-color: var(--accent-hover);
-            color: #fff;
-        }
-
-        .solution {
-            display: none;
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #334155;
-            color: #cbd5e1;
-        }
-
-        footer {
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            color: #64748b;
-        }
-    </style>
+    <title>Dilemas Digitais & Soluções</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>Dilemas Digitais</h1>
-        <p>Navegar no mundo conectado gera grandes desafios éticos e práticos. Explore abaixo os dilemas atuais e suas soluções.</p>
+        <h1>Dilemas Digitais & Soluções</h1>
+        <p>Navegando pelos desafios da era da informação</p>
     </header>
 
-    <div class="container">
-        
-        <div class="card">
-            <h2>1. Sobrecarga de Informação e FOMO</h2>
-            <p><strong>Dilema:</strong> A sensação constante de precisar acompanhar todas as notícias, redes sociais e mensagens gera ansiedade e perda de foco.</p>
-            <button onclick="toggleSolution('sol1')">Ver Solução</button>
-            <div id="sol1" class="solution">
-                <p><strong>Solução:</strong> Pratique a "Dieta de Informação". Defina horários fixos para checar redes sociais, desative notificações não essenciais e priorize momentos offline durante o dia.</p>
-            </div>
-        </div>
+    <main class="container">
+        <div class="cards-grid">
+            <article class="card">
+                <h2>Privacidade vs. Conveniência</h2>
+                <p class="description">Fornecemos dados pessoais em troca de serviços gratuitos e personalizados, reduzindo nosso controle sobre a própria privacidade.</p>
+                <button onclick="toggleSolution('sol-1')">Ver Solução</button>
+                <div id="sol-1" class="solution hidden">
+                    <strong>Solução:</strong> Use gerenciadores de senhas, ative a autenticação em dois fatores (2FA), utilize navegadores focados em privacidade e revise permissões de apps.
+                </div>
+            </article>
 
-        <div class="card">
-            <h2>2. Privacidade vs. Conveniência</h2>
-            <p><strong>Dilema:</strong> Aceitamos termos de uso longos e cedemos dados pessoais em troca de serviços gratuitos e personalizados, comprometendo nossa privacidade.</p>
-            <button onclick="toggleSolution('sol2')">Ver Solução</button>
-            <div id="sol2" class="solution">
-                <p><strong>Solução:</strong> Utilize navegadores com foco em privacidade (como Brave ou DuckDuckGo), revise permissões de aplicativos no celular periodicamente e adote gerenciadores de senhas.</p>
-            </div>
-        </div>
+            <article class="card">
+                <h2>Bolhas de Informação</h2>
+                <p class="description">Algoritmos mostram conteúdos alinhados às preferências do usuário, limitando a exposição a pontos de vista divergentes.</p>
+                <button onclick="toggleSolution('sol-2')">Ver Solução</button>
+                <div id="sol-2" class="solution hidden">
+                    <strong>Solução:</strong> Busque ativamente fontes de notícias variadas, limpe o histórico de navegação periodicamente e interaja com conteúdos diversos.
+                </div>
+            </article>
 
-        <div class="card">
-            <h2>3. Echo Chambers (Bolhas Digitais)</h2>
-            <p><strong>Dilema:</strong> Os algoritmos de recomendação mostram apenas conteúdos parecidos com o que já consumimos, reduzindo o pensamento crítico e gerando polarização.</p>
-            <button onclick="toggleSolution('sol3')">Ver Solução</button>
-            <div id="sol3" class="solution">
-                <p><strong>Solução:</strong> Busque proativamente fontes de informação com perspectivas diversas, limpe seu histórico de navegação e interaja com conteúdos fora do seu ciclo habitual.</p>
-            </div>
+            <article class="card">
+                <h2>Sobrecarga de Informação</h2>
+                <p class="description">O excesso de notificações e dados diários gera ansiedade, cansaço mental e perda de foco nas tarefas diárias.</p>
+                <button onclick="toggleSolution('sol-3')">Ver Solução</button>
+                <div id="sol-3" class="solution hidden">
+                    <strong>Solução:</strong> Pratique o "detox digital", desative notificações não essenciais e estabeleça horários específicos para checar redes sociais.
+                </div>
+            </article>
         </div>
-
-    </div>
+    </main>
 
     <footer>
-        <p>Projeto Open Source para o GitHub Pages</p>
+        <p>&copy; 2026 Dilemas Digitais. Projeto Open Source.</p>
     </footer>
 
-    <script>
-        function toggleSolution(id) {
-            const el = document.getElementById(id);
-            if (el.style.display === "block") {
-                el.style.display = "none";
-            } else {
-                el.style.display = "block";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
